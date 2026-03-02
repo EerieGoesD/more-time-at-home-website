@@ -2,7 +2,7 @@
 
 **Holiday leave optimizer that maximizes your days off by smartly placing paid leaves around weekends and national holidays.**
 
-🔗 **[Try it live](https://eeriegoesd.com/more-time-at-home/)** · ☕ [Buy Me a Coffee](https://buymeacoffee.com/eeriegoesd)
+🔗 **[Try it live](https://eeriegoesd.com/more-time-at-home-website)** · ☕ [Buy Me a Coffee](https://buymeacoffee.com/eeriegoesd)
 
 ---
 
