@@ -5,6 +5,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>More Time At Home — Holiday Leave Optimizer</title>
 <meta name="description" content="Maximize your time off work. Smart leave planner that optimizes your paid leave days around weekends and national holidays. Free, runs in your browser." />
+<meta name="keywords" content="holiday planner, leave optimizer, vacation planner, paid leave calculator, time off optimizer, bridge days, long weekends, holiday calendar 2026, PTO optimizer" />
+<meta name="author" content="EERIE" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://eeriegoesd.com/more-time-at-home" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="More Time At Home — Holiday Leave Optimizer" />
+<meta property="og:description" content="Maximize your days off. Smart algorithm places your paid leaves around weekends and national holidays for maximum consecutive time at home." />
+<meta property="og:url" content="https://eeriegoesd.com/more-time-at-home" />
+<meta property="og:image" content="https://eeriegoesd.com/more-time-at-home/og-more-time-at-home.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="More Time At Home — Holiday Leave Optimizer" />
+<meta name="twitter:description" content="Maximize your days off. Smart leave planner that optimizes paid leave around weekends & holidays." />
+<meta name="twitter:image" content="https://eeriegoesd.com/more-time-at-home/og-more-time-at-home.png" />
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "More Time At Home — Holiday Leave Optimizer",
+  "url": "https://eeriegoesd.com/more-time-at-home",
+  "description": "Smart leave planner that maximizes your time off by placing paid leaves around weekends and national holidays.",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Person", "name": "EERIE", "url": "https://eeriegoesd.com/" },
+  "browserRequirements": "Requires JavaScript"
+}
+</script>
+
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -686,6 +722,9 @@ footer .sep { color: var(--border); }
       Maximize your days off. Pick your country → set your paid leaves → hit Optimize.<br>
       Smart algorithm places leaves around weekends &amp; holidays for maximum time at home.
     </p>
+    <p class="social-proof" style="margin-top:14px; font-family:var(--mono); font-size:11px; color:var(--muted);">
+      🌍 Works for 26 countries · 🔒 Runs entirely in your browser · ☕ Free forever
+    </p>
   </div>
 </header>
 
@@ -769,6 +808,7 @@ footer .sep { color: var(--border); }
       <button class="btn btn-secondary" onclick="savePlan()">💾 Save</button>
       <button class="btn btn-secondary" onclick="document.getElementById('loadFileInput').click()">📂 Load</button>
       <button class="btn btn-danger" onclick="clearAll()">🗑️ Clear Leaves</button>
+      <button class="btn btn-secondary" onclick="shareResults()">📤 Share Result</button>
     </div>
     <input type="file" id="loadFileInput" accept=".hplan,.json" />
   </div>
@@ -806,6 +846,32 @@ footer .sep { color: var(--border); }
   </div>
 
 </main>
+
+<!-- FAQ Section -->
+<section style="max-width:1100px; margin:0 auto; padding:0 24px 60px; position:relative; z-index:1;">
+  <div class="divider"></div>
+  <h2 style="font-size:18px; font-weight:800; color:#fff; margin:32px 0 20px;">Frequently Asked Questions</h2>
+
+  <details style="margin-bottom:12px; border:1px solid var(--border); border-radius:8px; background:var(--surface);">
+    <summary style="padding:14px 18px; cursor:pointer; font-weight:700; font-size:13px; color:var(--text);">What is a holiday leave optimizer?</summary>
+    <p style="padding:0 18px 14px; font-size:13px; color:var(--muted); line-height:1.7;">A holiday leave optimizer (also called a bridge day calculator or PTO maximizer) analyzes your country's public holidays and weekends to find the best dates to take paid leave. By placing leave days next to existing days off, you get the longest possible consecutive breaks from the fewest leave days.</p>
+  </details>
+
+  <details style="margin-bottom:12px; border:1px solid var(--border); border-radius:8px; background:var(--surface);">
+    <summary style="padding:14px 18px; cursor:pointer; font-weight:700; font-size:13px; color:var(--text);">Is my data private?</summary>
+    <p style="padding:0 18px 14px; font-size:13px; color:var(--muted); line-height:1.7;">Yes. Everything runs in your browser — no data is sent to any server. Holiday data comes from the open Nager.Date API, but your leave selections never leave your device.</p>
+  </details>
+
+  <details style="margin-bottom:12px; border:1px solid var(--border); border-radius:8px; background:var(--surface);">
+    <summary style="padding:14px 18px; cursor:pointer; font-weight:700; font-size:13px; color:var(--text);">Which countries are supported?</summary>
+    <p style="padding:0 18px 14px; font-size:13px; color:var(--muted); line-height:1.7;">Currently 26 countries including the US, UK, Germany, France, Japan, Brazil, India, and more. Public holidays are fetched automatically. You can also add custom holidays manually by clicking any day on the calendar.</p>
+  </details>
+
+  <details style="margin-bottom:12px; border:1px solid var(--border); border-radius:8px; background:var(--surface);">
+    <summary style="padding:14px 18px; cursor:pointer; font-weight:700; font-size:13px; color:var(--text);">How does the optimization algorithm work?</summary>
+    <p style="padding:0 18px 14px; font-size:13px; color:var(--muted); line-height:1.7;">The optimizer evaluates every possible placement of your leave days and scores each by efficiency — total consecutive days off divided by leave days used. It prioritizes placements that "bridge" gaps between weekends and holidays, giving you the most time off per leave day spent.</p>
+  </details>
+</section>
 
 <footer>
   <span>Made by</span>
@@ -877,16 +943,16 @@ let state = {
   nationalHolidays: new Set(),
   customHolidays: new Set(),
   plannedLeaves: new Set(),
-  weekendOverrides: new Set(), // weekends turned into working days
-  holidayNames: {} // dateStr → name
+  weekendOverrides: new Set(),
+  holidayNames: {}
 };
 
 // ─────────────────────────────────────────────
 // HELPERS
 // ─────────────────────────────────────────────
 
-const ds = d => d.toISOString().split('T')[0]; // date → "YYYY-MM-DD"
-const pd = s => new Date(s + 'T00:00:00');      // "YYYY-MM-DD" → date
+const ds = d => d.toISOString().split('T')[0];
+const pd = s => new Date(s + 'T00:00:00');
 
 function isNaturalWeekend(date) {
   const dow = date.getDay();
@@ -916,7 +982,6 @@ function isLeapYear(y) {
 // ─────────────────────────────────────────────
 
 function init() {
-  // Year select
   const yearSel = document.getElementById('yearSelect');
   const curYear = new Date().getFullYear();
   for (let y = curYear - 2; y <= curYear + 5; y++) {
@@ -926,7 +991,6 @@ function init() {
     yearSel.appendChild(opt);
   }
 
-  // Country select
   const countrySel = document.getElementById('countrySelect');
   Object.keys(COUNTRIES).sort().forEach(name => {
     const opt = document.createElement('option');
@@ -935,10 +999,8 @@ function init() {
     countrySel.appendChild(opt);
   });
 
-  // Calc from
   document.getElementById('calcFrom').value = `${curYear}-01-01`;
 
-  // Events
   yearSel.addEventListener('change', onYearOrCountryChange);
   countrySel.addEventListener('change', onYearOrCountryChange);
   document.getElementById('weekStart').addEventListener('change', () => {
@@ -946,7 +1008,6 @@ function init() {
     renderCalendar();
   });
 
-  // Constraint mutual exclusions
   document.getElementById('minDaysOff10').addEventListener('change', e => {
     if (e.target.checked) document.getElementById('minDaysOff5').checked = true;
   });
@@ -966,10 +1027,8 @@ function init() {
     if (e.target.checked) document.getElementById('maxPaid5').checked = false;
   });
 
-  // Load file
   document.getElementById('loadFileInput').addEventListener('change', loadPlan);
 
-  // Initial load
   onYearOrCountryChange();
 }
 
@@ -977,7 +1036,6 @@ async function onYearOrCountryChange() {
   state.year = parseInt(document.getElementById('yearSelect').value);
   state.countryCode = document.getElementById('countrySelect').value;
 
-  // Update calc from year
   const cf = document.getElementById('calcFrom');
   const cfDate = cf.value ? pd(cf.value) : null;
   if (cfDate) {
@@ -1043,14 +1101,12 @@ function renderCalendar() {
     const card = document.createElement('div');
     card.className = 'month-card';
 
-    // Header
     const hdr = document.createElement('div');
     hdr.className = 'month-header';
     const monthDate = new Date(state.year, month - 1, 1);
     hdr.textContent = monthDate.toLocaleString('en', { month: 'long' }) + ' ' + state.year;
     card.appendChild(hdr);
 
-    // Day headers
     const dhRow = document.createElement('div');
     dhRow.className = 'month-day-headers';
     dayNames.forEach(d => {
@@ -1060,7 +1116,6 @@ function renderCalendar() {
     });
     card.appendChild(dhRow);
 
-    // Days grid
     const daysDiv = document.createElement('div');
     daysDiv.className = 'month-days';
 
@@ -1085,7 +1140,6 @@ function renderCalendar() {
         cell.textContent = day;
         cell.dataset.date = dateStr;
 
-        // Determine class
         const isNatWknd = isNaturalWeekend(date);
         const isWorkingWknd = state.weekendOverrides.has(dateStr);
         const isNational = state.nationalHolidays.has(dateStr);
@@ -1127,7 +1181,7 @@ function renderCalendar() {
 }
 
 // ─────────────────────────────────────────────
-// DAY CLICK — cycle through states
+// DAY CLICK
 // ─────────────────────────────────────────────
 
 function onDayClick(dateStr) {
@@ -1138,7 +1192,6 @@ function onDayClick(dateStr) {
   const wasPlanned = state.plannedLeaves.has(dateStr);
   const wasWorkingWknd = state.weekendOverrides.has(dateStr);
 
-  // Remove from all
   state.nationalHolidays.delete(dateStr);
   state.customHolidays.delete(dateStr);
   state.plannedLeaves.delete(dateStr);
@@ -1163,7 +1216,7 @@ function onDayClick(dateStr) {
 }
 
 // ─────────────────────────────────────────────
-// OPTIMIZATION (ported from C#)
+// OPTIMIZATION
 // ─────────────────────────────────────────────
 
 function optimize() {
@@ -1188,7 +1241,6 @@ function optimize() {
   setStatus('loading', 'Calculating optimal leave distribution...');
   state.plannedLeaves.clear();
 
-  // Build all days from startDate
   const allDays = [];
   let cur = new Date(startDate);
   while (cur.getFullYear() === state.year) {
@@ -1196,7 +1248,6 @@ function optimize() {
     cur.setDate(cur.getDate() + 1);
   }
 
-  // Build opportunities
   const opportunities = [];
   for (let i = 0; i < allDays.length; i++) {
     const dayStr = allDays[i];
@@ -1223,7 +1274,6 @@ function optimize() {
   let remaining = paidLeavesAmount;
   const usedDates = new Set();
 
-  // Handle minimum paid leaves constraint first
   if (reqMin10Paid || reqMin5Paid) {
     const required = reqMin10Paid ? 10 : 5;
     let satisfied = false;
@@ -1244,7 +1294,6 @@ function optimize() {
     }
   }
 
-  // Fill remaining
   for (const opp of opportunities) {
     if (remaining === 0) break;
     if (opp.leaveDates.some(d => usedDates.has(d))) continue;
@@ -1258,7 +1307,6 @@ function optimize() {
     remaining -= opp.requiredLeaves;
   }
 
-  // Fill singles if no min constraints
   if (remaining > 0 && !reqMin10Off && !reqMin5Off && !reqMin10Paid && !reqMin5Paid) {
     const singles = opportunities.filter(o => o.requiredLeaves === 1 && !o.leaveDates.some(d => usedDates.has(d)));
     for (const s of singles) {
@@ -1293,7 +1341,6 @@ function evaluateOpportunity(allDays, startDateStr, leaveLength) {
 
   if (added < leaveLength) return null;
 
-  // Look back for connected off days
   const totalOff = new Set();
   let checkStart = pd(startDateStr);
   let lookBack = new Date(checkStart);
@@ -1306,7 +1353,6 @@ function evaluateOpportunity(allDays, startDateStr, leaveLength) {
     } else break;
   }
 
-  // Look forward from checkStart
   let check = new Date(checkStart);
   const leaveSet = new Set(leaveDates);
   while (check.getFullYear() === state.year) {
@@ -1410,6 +1456,31 @@ function updateStats() {
       <div class="stat-value accent">${efficiency}<span class="stat-unit"> extra/leave</span></div>
     </div>
   `;
+}
+
+// ─────────────────────────────────────────────
+// SHARE
+// ─────────────────────────────────────────────
+
+function shareResults() {
+  const used = state.plannedLeaves.size;
+  const allocated = parseInt(document.getElementById('paidLeaves').value) || 0;
+  const totalDays = isLeapYear(state.year) ? 366 : 365;
+  let totalOff = 0;
+  let d = new Date(state.year, 0, 1);
+  while (d.getFullYear() === state.year) {
+    if (isOff(ds(d))) totalOff++;
+    d.setDate(d.getDate() + 1);
+  }
+  const text = `I just optimized my ${state.year} leave plan! ${used} paid leaves → ${totalOff} total days off (${(totalOff * 100 / totalDays).toFixed(1)}% of the year). Try it free:`;
+  const url = window.location.href;
+
+  if (navigator.share) {
+    navigator.share({ title: 'More Time At Home', text, url }).catch(() => {});
+  } else {
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+    window.open(twitterUrl, '_blank');
+  }
 }
 
 // ─────────────────────────────────────────────
